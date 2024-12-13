@@ -374,50 +374,39 @@ private fun SettingSections(
 
     VSpacer(32.dp)
 
-    CellUniversalLawrenceSection(
-        listOf({
-            HsSettingCell(
-                R.string.SettingsAboutApp_Title,
-                R.drawable.ic_about_app_20,
-                showAlert = uiState.aboutAppShowAlert,
-                onClick = {
-                    navController.slideFromRight(R.id.aboutAppFragment)
-
-                    stat(page = StatPage.Settings, event = StatEvent.Open(StatPage.AboutApp))
-                }
-            )
-        }, {
-            HsSettingCell(
-                R.string.Settings_RateUs,
-                R.drawable.ic_star_20,
-                onClick = {
-                    RateAppManager.openPlayMarket(context)
-
-                    stat(page = StatPage.Settings, event = StatEvent.Open(StatPage.RateUs))
-                }
-            )
-        }, {
-            HsSettingCell(
-                R.string.Settings_ShareThisWallet,
-                R.drawable.ic_share_20,
-                onClick = {
-                    shareAppLink(uiState.appWebPageLink, context)
-
-                    stat(page = StatPage.Settings, event = StatEvent.Open(StatPage.TellFriends))
-                }
-            )
-        }, {
-            HsSettingCell(
-                R.string.SettingsContact_Title,
-                R.drawable.ic_mail_24,
-                onClick = {
-                    navController.slideFromBottom(R.id.contactOptionsDialog)
-
-                    stat(page = StatPage.Settings, event = StatEvent.Open(StatPage.ContactUs))
-                },
-            )
-        })
-    )
+CellUniversalLawrenceSection(
+    listOf({
+        HsSettingCell(
+            R.string.Settings_Telegram,
+            R.drawable.ic_telegram_filled_24,
+            ComposeAppTheme.colors.jacob,
+            onClick = {
+                LinkHelper.openLinkInAppBrowser(context, App.appConfigProvider.appTelegramLink)
+                stat(page = StatPage.Settings, event = StatEvent.Open(StatPage.ExternalTelegram))
+            }
+        )
+    }, {
+        HsSettingCell(
+            R.string.Settings_Twitter,
+            R.drawable.ic_twitter_filled_24,
+            ComposeAppTheme.colors.jacob,
+            onClick = {
+                LinkHelper.openLinkInAppBrowser(context, App.appConfigProvider.appTwitterLink)
+                stat(page = StatPage.Settings, event = StatEvent.Open(StatPage.ExternalTwitter))
+            }
+        )
+    }, {
+        HsSettingCell(
+            R.string.Settings_Facebook,  // Assuming a string resource for Facebook
+            R.drawable.ic_twitter_filled_24,  // Use the same Twitter icon for Facebook
+            ComposeAppTheme.colors.jacob,
+            onClick = {
+                LinkHelper.openLinkInAppBrowser(context, App.appConfigProvider.appFacebookLink)  // Set the Facebook link here
+                stat(page = StatPage.Settings, event = StatEvent.Open(StatPage.ExternalFacebook))
+            }
+        )
+    })
+)
 
     VSpacer(32.dp)
 }
