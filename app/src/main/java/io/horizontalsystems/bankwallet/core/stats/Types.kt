@@ -71,6 +71,7 @@ enum class StatPage(val key: String) {
     ExternalNews("external_news"),
     ExternalReddit("external_reddit"),
     ExternalTelegram("external_telegram"),
+    ExternalFacebook("external_facebook"),
     ExternalTwitter("external_twitter"),
     ExternalWebsite("external_website"),
     Faq("faq"),
