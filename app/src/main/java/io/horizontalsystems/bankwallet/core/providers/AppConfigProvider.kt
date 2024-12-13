@@ -16,6 +16,7 @@ class AppConfigProvider(localStorage: ILocalStorage) {
     val appWebPageLink by lazy { Translator.getString(R.string.appWebPageLink) }
     val analyticsLink by lazy { Translator.getString(R.string.analyticsLink) }
     val appGithubLink by lazy { Translator.getString(R.string.appGithubLink) }
+    val appFacebookLink by lazy { Translator.getString(R.string.appFacebookLink) }
     val appTwitterLink by lazy { Translator.getString(R.string.appTwitterLink) }
     val appTelegramLink by lazy { Translator.getString(R.string.appTelegramLink) }
     val reportEmail by lazy { Translator.getString(R.string.reportEmail) }
