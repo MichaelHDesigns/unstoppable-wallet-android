@@ -325,7 +325,7 @@ private fun SettingSections(
 
                     stat(
                         page = StatPage.Settings,
-                        event = StatEvent.Open(StatPage.ExternalTelegram)
+                        event = StatEvent.Open(StatPage.ExternalFacebook)
                     )
                 }
             )
