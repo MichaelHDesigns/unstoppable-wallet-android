@@ -249,7 +249,7 @@ class CoinViewFactory(
                 link?.split("/")?.lastOrNull()?.replaceFirst("@", "")?.let { "@$it" }
                     ?: Translator.getString(R.string.CoinPage_Twitter)
             }
-            LinkType.Facebook -> Translator.getString(R.string.CoinPage_Telegram
+            LinkType.Facebook -> Translator.getString(R.string.CoinPage_Facebook)
             LinkType.Telegram -> Translator.getString(R.string.CoinPage_Telegram)
             LinkType.Reddit -> Translator.getString(R.string.CoinPage_Reddit)
             LinkType.Github -> Translator.getString(R.string.CoinPage_Github)
