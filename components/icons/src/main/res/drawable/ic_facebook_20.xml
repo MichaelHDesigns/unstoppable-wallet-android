@@ -1,28 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (c) Meta Platforms, Inc. and affiliates.
-    All rights reserved.
-
-    This source code is licensed under the license found in the
-    LICENSE file in the root directory of this source tree.
--->
-
-<vector
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="20dp"
     android:height="20dp"
     android:viewportWidth="20"
-    android:viewportHeight="20"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <path
-        android:fillAlpha="1"
-        android:fillColor="#808085"
-        android:fillType="evenOdd"
-        android:pathData="m1365.33,682.67c0,-377.03 -305.64,-682.67 -682.67,-682.67C305.64,-0 0,
-            305.64 0,682.67 0,1023.41 249.64,1305.83 576,1357.04L576,880L402.67,880l0,
-            -197.33l173.33,-0l0,-150.4c0,-171.09 101.92,-265.6 257.85,-265.6 74.69,-0 152.81,
-            13.33 152.81,13.33L986.67,448L900.58,448C815.78,448 789.33,500.62 789.33,
-            554.61L789.33,682.67L978.67,682.67L948.4,880L789.33,880L789.33,1357.04C1115.69,
-            1305.83 1365.33,1023.41 1365.33,682.67"
-        android:strokeColor="#00000000"
-        />
+    android:viewportHeight="20">
+  <path
+      android:pathData="M12,2C6.477,2 2,6.477 2,12C2,17.523 6.477,22 12,22C17.523,22 22,17.523 22,12C22,6.477 17.523,2 12,2ZM12,18C9.243,18 7,15.757 7,13C7,10.243 9.243,8 12,8C14.757,8 17,10.243 17,13C17,15.757 14.757,18 12,18ZM12,3C9.794,3 8,4.794 8,7C8,9.206 9.794,11 12,11C14.206,11 16,9.206 16,7C16,4.794 14.206,3 12,3ZM12,9C10.895,9 10,8.105 10,7C10,5.895 10.895,5 12,5C13.105,5 14,5.895 14,7C14,8.105 13.105,9 12,9ZM10,13C10,13.553 10.447,14 11,14H13C13.553,14 14,13.553 14,13C14,12.447 13.553,12 13,12H11C10.447,12 10,12.447 10,13ZM10,15C10,15.553 10.447,16 11,16H13C13.553,16 14,15.553 14,15C14,14.447 13.553,14 13,14H11C10.447,14 10,14.447 10,15Z"
+      android:fillColor="#3b5998"
+      android:fillType="evenOdd"/>
 </vector>
