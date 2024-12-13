@@ -27,6 +27,7 @@ class ReleaseNotesViewModel(
 ) : ViewModel() {
 
     val twitterUrl = appConfigProvider.appTwitterLink
+    val facebookUrl = appConfigProvider.appFacebookLink
     val telegramUrl = appConfigProvider.appTelegramLink
 
     var markdownBlocks by mutableStateOf<List<MarkdownBlock>>(listOf())
