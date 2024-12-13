@@ -315,7 +315,21 @@ private fun SettingSections(
                     )
                 }
             )
-        }, {
+        }, 
+               HsSettingCell(
+                R.string.Settings_Facebook,
+                R.drawable.ic_twitter_filled_24,
+                ComposeAppTheme.colors.jacob,
+                onClick = {
+                    LinkHelper.openLinkInAppBrowser(context, App.appConfigProvider.appFacebookLink)
+
+                    stat(
+                        page = StatPage.Settings,
+                        event = StatEvent.Open(StatPage.ExternalTelegram)
+                    )
+                }
+            )
+        },{
             HsSettingCell(
                 R.string.Settings_Twitter,
                 R.drawable.ic_twitter_filled_24,
