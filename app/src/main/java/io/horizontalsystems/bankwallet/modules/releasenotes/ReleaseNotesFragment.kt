@@ -116,6 +116,11 @@ fun ReleaseNotesScreen(
                     viewModel.telegramUrl,
                     stringResource(R.string.CoinPage_Telegram)
                 )
+                IconButton(
+                    R.drawable.ic_twitter_filled_24,
+                    viewModel.facebookUrl,
+                    stringResource(R.string.CoinPage_Facebook)
+                )
 
                 Spacer(Modifier.weight(1f))
 
