@@ -507,7 +507,7 @@ private fun SettingsFooter(appVersion: String, companyWebPage: String) {
                 .clickable {
                     LinkHelper.openLinkInAppBrowser(context, companyWebPage)
                 },
-            painter = painterResource(id = R.drawable.ic_company_logo),
+            painter = painterResource(id = R.drawable.ic_splash_logo),
             contentDescription = null,
         )
         caption_grey(

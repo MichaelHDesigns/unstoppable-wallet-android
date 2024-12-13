@@ -4,7 +4,7 @@
 
     <style name="Title2">
         <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textStyle">bold|italic</item>
         <item name="android:textSize">32sp</item>
         <item name="android:textColor">?TitleColor</item>
     </style>
@@ -16,14 +16,14 @@
 
     <style name="Title3">
         <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textStyle">bold|italic</item>
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">?TitleColor</item>
     </style>
 
     <style name="Title3NoColor">
         <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textStyle">bold|italic</item>
         <item name="android:textSize">24sp</item>
     </style>
 
