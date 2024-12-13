@@ -272,7 +272,6 @@ private fun onClick(coinLink: CoinLink, context: Context, navController: NavCont
         LinkType.Website -> stat(page = StatPage.CoinOverview, event = StatEvent.Open(StatPage.ExternalCoinWebsite))
         LinkType.Whitepaper -> stat(page = StatPage.CoinOverview, event = StatEvent.Open(StatPage.ExternalCoinWhitePaper))
         LinkType.Twitter -> stat(page = StatPage.CoinOverview, event = StatEvent.Open(StatPage.ExternalTwitter))
-        LinkType.Facebook -> stat(page = StatPage.CoinOverview, event = StatEvent.Open(StatPage.ExternalFacebook))
         LinkType.Telegram -> stat(page = StatPage.CoinOverview, event = StatEvent.Open(StatPage.ExternalTelegram))
         LinkType.Reddit -> stat(page = StatPage.CoinOverview, event = StatEvent.Open(StatPage.ExternalReddit))
         LinkType.Github -> stat(page = StatPage.CoinOverview, event = StatEvent.Open(StatPage.ExternalGithub))
@@ -280,7 +279,6 @@ private fun onClick(coinLink: CoinLink, context: Context, navController: NavCont
 }
 
 private fun getAbsoluteUrl(coinLink: CoinLink) = when (coinLink.linkType) {
-    LinkType.Facebook -> "https://facebook.com/${coinLink.url}"
     LinkType.Twitter -> "https://twitter.com/${coinLink.url}"
     LinkType.Telegram -> "https://t.me/${coinLink.url}"
     else -> coinLink.url

@@ -198,7 +198,6 @@ class CoinViewFactory(
             LinkType.Website,
             LinkType.Whitepaper,
             LinkType.Reddit,
-            LinkType.Facebook,
             LinkType.Twitter,
             LinkType.Telegram,
             LinkType.Github,
@@ -229,7 +228,6 @@ class CoinViewFactory(
             LinkType.Guide -> R.drawable.ic_academy_20
             LinkType.Website -> R.drawable.ic_globe_20
             LinkType.Whitepaper -> R.drawable.ic_clipboard_20
-            LinkType.Facebook -> R.drawable.ic_twitter_20
             LinkType.Twitter -> R.drawable.ic_twitter_20
             LinkType.Telegram -> R.drawable.ic_telegram_20
             LinkType.Reddit -> R.drawable.ic_reddit_20
@@ -249,7 +247,6 @@ class CoinViewFactory(
                 link?.split("/")?.lastOrNull()?.replaceFirst("@", "")?.let { "@$it" }
                     ?: Translator.getString(R.string.CoinPage_Twitter)
             }
-            LinkType.Facebook -> Translator.getString(R.string.CoinPage_Facebook)
             LinkType.Telegram -> Translator.getString(R.string.CoinPage_Telegram)
             LinkType.Reddit -> Translator.getString(R.string.CoinPage_Reddit)
             LinkType.Github -> Translator.getString(R.string.CoinPage_Github)
