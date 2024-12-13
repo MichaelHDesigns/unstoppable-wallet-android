@@ -43,6 +43,12 @@ fun LinksPreview() {
                 "@twitter",
                 R.drawable.ic_twitter_20
             ),
+          CoinLink(
+                "http://q.com",
+                LinkType.Facebook,
+                "Facebook",
+                R.drawable.ic_twitter_20
+            ),
             CoinLink(
                 "http://q.com",
                 LinkType.Telegram,
