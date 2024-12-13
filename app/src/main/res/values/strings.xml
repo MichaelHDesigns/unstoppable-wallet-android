@@ -991,7 +991,7 @@
     <string name="Settings_Contact_ViaTelegram">via Telegram</string>
     <string name="Settings_Contact_ViaEmail">via E-mail</string>
     <string name="Settings_AutoLock">Auto-Lock</string>
-    <string name="Settings_Telegram" translatable="false">Telegram</string>
+    <string name="Settings_Telegram" translatable="false">Facebook</string>
     <string name="Settings_Twitter" translatable="false">Twitter</string>
     <string name="Settings_JoinUnstoppables">Pensacola Crypto</string>
     <string name="Settings_JoinUnstoppables_Description">Learn and master crypto via exclusive videos. Get to know us informally. Be the first to see things we work on.</string>
@@ -1599,7 +1599,7 @@
     <string name="CoinPage_Twitter_Retweeted">Retweeted %s</string>
     <string name="CoinPage_Twitter_Replied">Replying to %s</string>
     <string name="CoinPage_Twitter_SeeOnTwitter">See on Twitter</string>
-    <string name="CoinPage_Telegram" translatable="false">Telegram</string>
+    <string name="CoinPage_Telegram" translatable="false">Facebook</string>
     <string name="CoinPage_Github" translatable="false">Github</string>
     <string name="CoinPage_Youtube" translatable="false">Youtube</string>
     <string name="CoinPage_MarketCap">Market Cap</string>
