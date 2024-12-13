@@ -113,7 +113,7 @@ private fun SettingSections(
                 R.drawable.ic_uwt2_24,
                 ComposeAppTheme.colors.jacob,
                 onClick = {
-                    LinkHelper.openLinkInAppBrowser(context, "https://t.me/BeUnstoppable_bot")
+                    LinkHelper.openLinkInAppBrowser(context, "https://facebook.com/pensacolacrypto")
                 }
             )
         }
