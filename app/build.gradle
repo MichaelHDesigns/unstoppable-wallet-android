@@ -31,13 +31,13 @@ android {
             checkReleaseBuilds false
         }
 
-        resValue "string", "companyWebPageLink", "https://horizontalsystems.io"
-        resValue "string", "appWebPageLink", "https://unstoppable.money"
+        resValue "string", "companyWebPageLink", "https://www.pensacolacrypto.com/"
+        resValue "string", "appWebPageLink", "https://www.pensacolacrypto.com/"
         resValue "string", "analyticsLink", "https://unstoppable.money/analytics"
         resValue "string", "appGithubLink", "https://github.com/horizontalsystems/unstoppable-wallet-android"
-        resValue "string", "appTwitterLink", "https://twitter.com/UnstoppableByHS"
+        resValue "string", "appTwitterLink", "https://x.com/pensacolacrypto"
         resValue "string", "appTelegramLink", "https://t.me/unstoppable_announcements"
-        resValue "string", "reportEmail", "support.unstoppable@protonmail.com"
+        resValue "string", "reportEmail", "pensacolacrypto@gmail.com"
         resValue "string", "releaseNotesUrl", "https://api.github.com/repos/horizontalsystems/unstoppable-wallet-android/releases/tags/"
         resValue "string", "walletConnectAppMetaDataName", "Unstoppable"
         resValue "string", "walletConnectAppMetaDataUrl", "unstoppable.money"
