@@ -46,7 +46,7 @@
     </style>
 
     <style name="SwitchTheme" parent="ThemeOverlay.AppCompat.Dark">
-        <item name="colorControlActivated">@color/remus</item>
+        <item name="colorControlActivated">@color/grey</item>
         <item name="colorControlNormal">@color/grey</item>
         <item name="colorSwitchThumbNormal">@color/grey</item>
         <item name="android:colorForeground">@color/grey</item>

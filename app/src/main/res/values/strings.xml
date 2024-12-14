@@ -993,7 +993,7 @@
     <string name="Settings_AutoLock">Auto-Lock</string>
     <string name="Settings_Facebook" translatable="false">Facebook</string>
     <string name="Settings_Telegram" translatable="false">Telegram</string>
-    <string name="Settings_Twitter" translatable="false">Twitter</string>
+    <string name="Settings_Twitter" translatable="false">X</string>
     <string name="Settings_JoinUnstoppables">Pensacola Crypto</string>
     <string name="Settings_JoinUnstoppables_Description">Learn and master crypto via exclusive videos. Get to know us informally. Be the first to see things we work on.</string>
 
@@ -1593,13 +1593,13 @@
     <string name="CoinPage_Website">Website</string>
     <string name="CoinPage_Whitepaper">Whitepaper</string>
     <string name="CoinPage_Reddit" translatable="false">Reddit</string>
-    <string name="CoinPage_Twitter" translatable="false">Twitter</string>
-    <string name="CoinPage_Twitter_NotAvailable">No twitter available</string>
+    <string name="CoinPage_Twitter" translatable="false">X</string>
+    <string name="CoinPage_Twitter_NotAvailable">No X available</string>
     <string name="CoinPage_Twitter_NoTweets">No tweets yet</string>
     <string name="CoinPage_Twitter_Quoted">Quoted %s</string>
     <string name="CoinPage_Twitter_Retweeted">Retweeted %s</string>
     <string name="CoinPage_Twitter_Replied">Replying to %s</string>
-    <string name="CoinPage_Twitter_SeeOnTwitter">See on Twitter</string>
+    <string name="CoinPage_Twitter_SeeOnTwitter">See on X</string>
     <string name="CoinPage_Telegram" translatable="false">Telegram</string>
     <string name="CoinPage_Facebook" translatable="false">Facebook</string>
     <string name="CoinPage_Github" translatable="false">Github</string>
@@ -1897,7 +1897,7 @@
     <string name="NftAsset_Links_Website">Website</string>
     <string name="NftAsset_Links_OpenSea" translatable="false">OpenSea</string>
     <string name="NftAsset_Links_Discord" translatable="false">Discord</string>
-    <string name="NftAsset_Links_Twitter" translatable="false">Twitter</string>
+    <string name="NftAsset_Links_Twitter" translatable="false">X</string>
     <string name="PoweredBy_OpenSeaAPI">Powered by OpenSea API</string>
 
     <string name="Nft_TopCollections">Top NFT Collections</string>

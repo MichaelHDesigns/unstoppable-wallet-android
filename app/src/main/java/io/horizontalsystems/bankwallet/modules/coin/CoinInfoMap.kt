@@ -60,7 +60,6 @@ object CoinInfoMap {
             "CVC" to CoinInfo(BigDecimal(1_000_000_000), "21/06/2017", "https://www.civic.com"),
             "DAI" to CoinInfo(BigDecimal(127_759_558), "18/11/2019", "https://makerdao.com/en/"),
             "DASH" to CoinInfo(BigDecimal(18_900_000), "18/01/2014", "https://dash.org"),
-            "DDIM" to CoinInfo(BigDecimal(1_500_000), null, "https://duckdao.io"),
             "DEFO" to CoinInfo(null, null, "https://defhold.com"),
             "DEGO" to CoinInfo(null, null, "https://dego.finance"),
             "DEUS" to CoinInfo(BigDecimal(1_793_062), null, "https://deus.finance/home"),

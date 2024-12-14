@@ -11,8 +11,8 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:actionMenuTextAppearance">@style/Headline2</item>
-        <item name="colorControlNormal">@color/grey</item>
-        <item name="colorControlActivated">@color/yellow_l</item>
+        <item name="colorControlNormal">@color/jacob</item>
+        <item name="colorControlActivated">@color/jacob</item>
         <item name="colorControlHighlight">#6E7899</item>
         <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
         <item name="android:forceDarkAllowed" tools:targetApi="29">false</item>
@@ -23,8 +23,8 @@
         <item name="TextColorGreyLightToDark">@color/dark</item>
         <item name="TextColorBarsToDark">@color/dark</item>
         <item name="AboutBackgroundColor">@color/white</item>
-        <item name="BottomNavigationBackgroundColor">@color/light</item>
-        <item name="RippleColor">@color/ripple_black</item>
+        <item name="BottomNavigationBackgroundColor">@color/jacob</item>
+        <item name="RippleColor">@color/jacob</item>
         <item name="RoundRippleColor">@color/light_grey</item>
         <item name="BottomNavBackground">@drawable/shadow_bottom_navigation_light</item>
         <item name="TransactionDetailBackground">@color/white</item>
