@@ -58,7 +58,7 @@ fun BalanceNoAccount(navController: NavController) {
             )
         }
         Spacer(Modifier.height(32.dp))
-        ButtonPrimaryYellow(
+        ButtonPrimaryDefault(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 48.dp),
