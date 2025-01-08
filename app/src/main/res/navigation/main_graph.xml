@@ -19,10 +19,10 @@
     <fragment
         android:id="@+id/filterCoinFragment"
         android:name="io.horizontalsystems.bankwallet.modules.transactions.FilterCoinFragment" />
-   <fragment
+    <fragment
         android:id="@+id/filterBlockchainFragment"
         android:name="io.horizontalsystems.bankwallet.modules.transactions.FilterBlockchainFragment" />
-   <fragment
+    <fragment
         android:id="@+id/transactionFilterFragment"
         android:name="io.horizontalsystems.bankwallet.modules.transactions.TransactionsFilterFragment" />
     <fragment
@@ -49,7 +49,7 @@
     <fragment
         android:id="@+id/privateKeysFragment"
         android:name="io.horizontalsystems.bankwallet.modules.manageaccount.privatekeys.PrivateKeysFragment"/>
-     <fragment
+    <fragment
         android:id="@+id/publicKeysFragment"
         android:name="io.horizontalsystems.bankwallet.modules.manageaccount.publickeys.PublicKeysFragment"/>
     <fragment
@@ -73,7 +73,7 @@
     <fragment
         android:id="@+id/backupLocalFragment"
         android:name="io.horizontalsystems.bankwallet.modules.backuplocal.BackupLocalFragment"/>
-     <fragment
+    <fragment
         android:id="@+id/transactionLockTimeInfoFragment"
         android:name="io.horizontalsystems.bankwallet.modules.info.TransactionLockTimeInfoFragment"/>
     <fragment
@@ -165,9 +165,9 @@
     <fragment
         android:id="@+id/coinReportsFragment"
         android:name="io.horizontalsystems.bankwallet.modules.coin.reports.CoinReportsFragment" />
- <fragment
-     android:id="@+id/coinDetectorsFragment"
-     android:name="io.horizontalsystems.bankwallet.modules.coin.detectors.DetectorsFragment" />
+    <fragment
+        android:id="@+id/coinDetectorsFragment"
+        android:name="io.horizontalsystems.bankwallet.modules.coin.detectors.DetectorsFragment" />
     <fragment
         android:id="@+id/setPinFragment"
         android:name="io.horizontalsystems.bankwallet.modules.pin.SetPinFragment" />

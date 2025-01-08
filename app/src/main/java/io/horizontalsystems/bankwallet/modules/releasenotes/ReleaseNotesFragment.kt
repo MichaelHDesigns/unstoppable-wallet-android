@@ -117,7 +117,7 @@ fun ReleaseNotesScreen(
                     stringResource(R.string.CoinPage_Telegram)
                 )
                 IconButton(
-                    R.drawable.ic_twitter_filled_24,
+                    R.drawable.ic_facebook_filled_24,
                     viewModel.facebookUrl,
                     stringResource(R.string.CoinPage_Facebook)
                 )

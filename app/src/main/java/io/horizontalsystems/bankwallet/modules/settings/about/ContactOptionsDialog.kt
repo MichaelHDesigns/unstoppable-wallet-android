@@ -68,7 +68,7 @@ private fun ContactOptionsScreen(
             onCloseClick = onCloseClick
         ) {
             VSpacer(24.dp)
-            ButtonPrimaryYellow(
+            ButtonPrimaryDefault(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 24.dp),

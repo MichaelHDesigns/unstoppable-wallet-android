@@ -2,6 +2,7 @@ package io.horizontalsystems.bankwallet.modules.multiswap
 
 import android.util.Log
 import io.horizontalsystems.bankwallet.modules.multiswap.providers.IMultiSwapProvider
+import io.horizontalsystems.bankwallet.modules.multiswap.providers.JupiterProvider
 import io.horizontalsystems.bankwallet.modules.multiswap.providers.OneInchProvider
 import io.horizontalsystems.bankwallet.modules.multiswap.providers.PancakeSwapProvider
 import io.horizontalsystems.bankwallet.modules.multiswap.providers.PancakeSwapV3Provider
@@ -24,6 +25,7 @@ import java.math.BigDecimal
 
 class SwapQuoteService {
     private val allProviders = listOf(
+        JupiterProvider(),
         OneInchProvider,
         PancakeSwapProvider,
         PancakeSwapV3Provider,

@@ -53,6 +53,7 @@ val Token.swappable: Boolean
         BlockchainType.Base,
         BlockchainType.Gnosis,
         BlockchainType.Fantom,
+        BlockchainType.Solana,
         BlockchainType.ArbitrumOne -> true
         else -> false
     }

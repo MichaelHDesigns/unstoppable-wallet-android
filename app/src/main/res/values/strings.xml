@@ -1,6 +1,6 @@
 <resources>
     <string name="App_Name" translatable="false">Pensacola Crypto</string>
-    <string name="DeeplinkScheme" translatable="false">pensacola crypto</string>
+    <string name="DeeplinkScheme" translatable="false">Pensacola Crypto LLC</string>
 
     <!--Common-->
 
@@ -980,7 +980,7 @@
     <string name="Settings_ShareThisWallet">Tell Friends</string>
     <string name="Settings_InfoTitleWithVersion" translatable="false">Pensacola Crypto %s</string>
     <string name="Settings_InfoSubtitle" translatable="false">decentralized app</string>
-    <string name="Settings_CompanyName" translatable="false">pensacola crypto</string>
+    <string name="Settings_CompanyName" translatable="false">Pensacola Crypto LLC</string>
     <string name="Settings_Faq" translatable="false">FAQ</string>
     <string name="Settings_AppStatus">App Status</string>
     <string name="Settings_WalletConnect" translatable="false">WalletConnect</string>
@@ -994,9 +994,11 @@
     <string name="Settings_Facebook" translatable="false">Facebook</string>
     <string name="Settings_Telegram" translatable="false">Telegram</string>
     <string name="Settings_Twitter" translatable="false">X</string>
+    <string name="Settings_WalletTitle">Wallet Management</string>
     <string name="Settings_JoinUnstoppables">Pensacola Crypto</string>
     <string name="Settings_JoinUnstoppables_Description">Learn and master crypto via exclusive videos. Get to know us informally. Be the first to see things we work on.</string>
-
+    <string name="Settings_FaqTitle">FAQ</string>
+    <string name="Settings_AboutTitle">Leave Feedback</string>
     <string name="Settings_PersonalSupport">Personal Support</string>
     <string name="Settings_PersonalSupport_EnterTelegramAccountDescription">Enter your Telegram account name to start a personal support chat with our team. We\'ll get back to you and start working on your problem as soon as we see it.</string>
     <string name="Settings_PersonalSupport_YouAlreadyRequestedSupportDescription">You\'ve already requested a private chat, find it on Telegram</string>

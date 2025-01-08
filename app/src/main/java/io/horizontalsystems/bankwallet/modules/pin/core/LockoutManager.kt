@@ -12,22 +12,19 @@ class LockoutManager(
 
     override val currentState: LockoutState
         get() {
-            val failedAttempts = localStorage.failedAttempts
-            val attemptsLeft = failedAttempts?.let {
-                if (it >= lockoutThreshold) {
-                    val lockoutUptime = localStorage.lockoutUptime ?: uptimeProvider.uptime
-                    lockoutUntilDateFactory.lockoutUntilDate(
-                        it,
-                        lockoutUptime,
-                        uptimeProvider.uptime
-                    )?.let { untilDate ->
-                        return LockoutState.Locked(untilDate)
-                    }
+            val failedAttempts = localStorage.failedAttempts ?: 0 // Default to 0 if null
+            val attemptsLeft = if (failedAttempts >= lockoutThreshold) {
+                val lockoutUptime = localStorage.lockoutUptime ?: uptimeProvider.uptime
+                lockoutUntilDateFactory.lockoutUntilDate(
+                    failedAttempts,
+                    lockoutUptime,
+                    uptimeProvider.uptime
+                )?.let { untilDate ->
+                    return LockoutState.Locked(untilDate)
                 }
-
-                //  calculate attempts left
-                val attempts = lockoutThreshold - it
-                if (attempts < 1) 1 else attempts
+                0 // No attempts left if locked
+            } else {
+                lockoutThreshold - failedAttempts // Calculate attempts left
             }
 
             return LockoutState.Unlocked(attemptsLeft)
@@ -44,5 +41,4 @@ class LockoutManager(
     override fun dropFailedAttempts() {
         localStorage.failedAttempts = null
     }
-
 }

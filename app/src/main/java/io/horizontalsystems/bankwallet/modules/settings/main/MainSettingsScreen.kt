@@ -2,6 +2,7 @@ package io.horizontalsystems.bankwallet.modules.settings.main
 
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
@@ -106,20 +107,15 @@ private fun SettingSections(
 
     VSpacer(32.dp)
 
-    CellUniversalLawrenceSection(
-        listOf {
-            HsSettingCell(
-                R.string.Settings_GetYourTokens,
-                R.drawable.ic_uwt2_24,
-                ComposeAppTheme.colors.jacob,
-                onClick = {
-                    LinkHelper.openLinkInAppBrowser(context, "https://t.me/c/1662773733/15")
-                }
-            )
-        }
-    )
-
-    VSpacer(32.dp)
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 32.dp)
+            .height(32.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        subhead1_jacob(text = stringResource(id = R.string.Settings_WalletTitle).uppercase())
+    }
 
     CellUniversalLawrenceSection(
         listOf({
@@ -151,64 +147,6 @@ private fun SettingSections(
             )
         }, {
             HsSettingCell(
-                R.string.Settings_WalletConnect,
-                R.drawable.ic_wallet_connect_20,
-                value = (uiState.wcCounterType as? MainSettingsModule.CounterType.SessionCounter)?.number?.toString(),
-                counterBadge = (uiState.wcCounterType as? MainSettingsModule.CounterType.PendingRequestCounter)?.number?.toString(),
-                onClick = {
-                    when (val state = viewModel.walletConnectSupportState) {
-                        WCManager.SupportState.Supported -> {
-                            navController.slideFromRight(R.id.wcListFragment)
-
-                            stat(
-                                page = StatPage.Settings,
-                                event = StatEvent.Open(StatPage.WalletConnect)
-                            )
-                        }
-
-                        WCManager.SupportState.NotSupportedDueToNoActiveAccount -> {
-                            navController.slideFromBottom(R.id.wcErrorNoAccountFragment)
-                        }
-
-                        is WCManager.SupportState.NotSupportedDueToNonBackedUpAccount -> {
-                            val text = Translator.getString(R.string.WalletConnect_Error_NeedBackup)
-                            navController.slideFromBottom(
-                                R.id.backupRequiredDialog,
-                                BackupRequiredDialog.Input(state.account, text)
-                            )
-
-                            stat(
-                                page = StatPage.Settings,
-                                event = StatEvent.Open(StatPage.BackupRequired)
-                            )
-                        }
-
-                        is WCManager.SupportState.NotSupported -> {
-                            navController.slideFromBottom(
-                                R.id.wcAccountTypeNotSupportedDialog,
-                                WCAccountTypeNotSupportedDialog.Input(state.accountTypeDescription)
-                            )
-                        }
-                    }
-                }
-            )
-//        }, {
-//            HsSettingCell(
-//                title = R.string.Settings_TonConnect,
-//                icon = R.drawable.ic_ton_connect_24,
-//                value = null,
-//                counterBadge = null,
-//                onClick = {
-//                    navController.slideFromRight(R.id.tcListFragment)
-//
-//                    stat(
-//                        page = StatPage.Settings,
-//                        event = StatEvent.Open(StatPage.TonConnect)
-//                    )
-//                }
-//            )
-        }, {
-            HsSettingCell(
                 R.string.BackupManager_Title,
                 R.drawable.ic_file_24,
                 onClick = {
@@ -220,8 +158,6 @@ private fun SettingSections(
         }
         )
     )
-
-    VSpacer(32.dp)
 
     CellUniversalLawrenceSection(
         listOf(
@@ -337,40 +273,43 @@ private fun SettingSections(
                     stat(page = StatPage.Settings, event = StatEvent.Open(StatPage.ExternalFacebook))
                 }
             )
-        })
-    )
-    InfoText(
-        text = stringResource(R.string.Settings_JoinUnstoppables_Description),
+        }, )
     )
 
     VSpacer(32.dp)
-
-    CellUniversalLawrenceSection(
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 32.dp)
+            .height(32.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        subhead1_jacob(text = stringResource(id = R.string.Settings_FaqTitle).uppercase())
+    }
+        CellUniversalLawrenceSection(
         listOf({
             HsSettingCell(
                 R.string.Settings_Faq,
                 R.drawable.ic_faq_20,
                 onClick = {
-                    navController.slideFromRight(R.id.faqListFragment)
-
-                    stat(page = StatPage.Settings, event = StatEvent.Open(StatPage.Faq))
-                }
-            )
-        }, {
-            HsSettingCell(
-                R.string.Guides_Title,
-                R.drawable.ic_academy_20,
-                onClick = {
-                    navController.slideFromRight(R.id.academyFragment)
-
-                    stat(page = StatPage.Settings, event = StatEvent.Open(StatPage.Academy))
+                    val url = "https://www.pensacolacrypto.com/pensacola-crypto-wallet-app#gsc.tab=0"
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                    context.startActivity(intent)
                 }
             )
         })
     )
 
     VSpacer(32.dp)
-
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 32.dp)
+            .height(32.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        subhead1_jacob(text = stringResource(id = R.string.Settings_AboutTitle).uppercase())
+    }
     CellUniversalLawrenceSection(
         listOf({
             HsSettingCell(
@@ -512,7 +451,7 @@ private fun SettingsFooter(appVersion: String, companyWebPage: String) {
         )
         caption_grey(
             modifier = Modifier.padding(top = 12.dp, bottom = 32.dp),
-            text = stringResource(R.string.Settings_CompanyName),
+            text = stringResource(R.string.Settings_CompanyName).uppercase(),
         )
     }
 }

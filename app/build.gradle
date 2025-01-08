@@ -37,7 +37,7 @@ android {
         resValue "string", "appGithubLink", "https://github.com/michaelhdesigns/unstoppable-wallet-android"
         resValue "string", "appTwitterLink", "https://x.com/pensacolacrypto"
         resValue "string", "appFacebookLink", "https://facebook.com/pensacolacrypto"
-        resValue "string", "appTelegramLink", "https://t.me/c/1662773733/15"
+        resValue "string", "appTelegramLink", "https://t.me/+vgeSs9c_S51jMDNh"
         resValue "string", "reportEmail", "pensacolacrypto@gmail.com"
         resValue "string", "releaseNotesUrl", "https://api.github.com/repos/michaelhdesigns/unstoppable-wallet-android/releases/tags/"
         resValue "string", "walletConnectAppMetaDataName", "Unstoppable"
@@ -196,6 +196,12 @@ android {
 
 }
 
+repositories {
+    google()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "androidx.appcompat:appcompat:$appcompat_version"
@@ -283,7 +289,7 @@ dependencies {
 
     // Wallet kits
     implementation 'com.github.horizontalsystems:ton-kit-android:763a5c3'
-    implementation 'com.github.horizontalsystems:bitcoin-kit-android:ced5801'
+    implementation "com.github.horizontalsystems:bitcoin-kit-android:master-SNAPSHOT"
     implementation 'com.github.horizontalsystems:ethereum-kit-android:0c770e3'
     implementation 'com.github.horizontalsystems:blockchain-fee-rate-kit-android:1d3bd49'
     implementation 'com.github.horizontalsystems:binance-chain-kit-android:c1509a2'
@@ -369,6 +375,10 @@ dependencies {
 
     api 'com.jaredrummler:android-shell:1.0.0'
     api 'com.offbynull.portmapper:portmapper:2.0.5'
+
+    // Keep this one from the kits section
+    implementation 'com.github.horizontalsystems:solana-kit-android:ce738d8'
+
 }
 
 configurations.all {
